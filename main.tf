@@ -1,6 +1,6 @@
 ### PROVIDER
 provider "google" {
-  project = "advancedterraform" #replace this with your project-id
+  project = "advanced-terraform-513607" #replace this with your project-id
   region  = "us-central1"
   zone    = "us-central1-a"
 }
@@ -44,7 +44,7 @@ resource "google_compute_instance" "nginx_instance" {
   
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-cloud/debian-12"
     }
   }
 
@@ -64,7 +64,7 @@ resource "google_compute_instance" "web1" {
   
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-cloud/debian-12"
     }
   }
 
@@ -81,7 +81,7 @@ resource "google_compute_instance" "web2" {
   
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-cloud/debian-12"
     }
   }
 
@@ -97,7 +97,7 @@ resource "google_compute_instance" "web3" {
   
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-cloud/debian-12"
     }
   }
 
@@ -114,7 +114,7 @@ resource "google_compute_instance" "mysqldb" {
   
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-cloud/debian-12"
     }
   }
 
